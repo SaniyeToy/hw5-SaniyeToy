@@ -19,6 +19,10 @@ class ScrollViewController: UIViewController , UIScrollViewDelegate {
         createViews()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        scheduledTimerWithTimeInterval()
+    }
+ 
     func createViews(){
         
         let view1 = UIView()
@@ -43,6 +47,27 @@ class ScrollViewController: UIViewController , UIScrollViewDelegate {
         scrollView.addSubview(view5)
         
     }
+    
+    func scheduledTimerWithTimeInterval(){
+        // Scheduling timer to Call the function "updateCounting" with the interval of 3 seconds
+        let timer = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(self.animateScrollView), userInfo: nil, repeats: true)
+    }
+
+    @objc func animateScrollView() {
+        let scrollWidth = scrollView.bounds.width
+        let currentXOffset = scrollView.contentOffset.x
+        
+        let lastXPos = currentXOffset + scrollWidth
+        if lastXPos != scrollView.contentSize.width {
+            print("Scroll")
+            scrollView.setContentOffset(CGPoint(x: lastXPos, y: 0), animated: true)
+        }
+        else {
+            print("Scroll to start")
+            scrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
+        }
+    }
+
  
 
 }
