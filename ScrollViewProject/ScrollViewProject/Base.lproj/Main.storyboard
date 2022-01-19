@@ -16,23 +16,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="dhR-kz-B4V">
-                                <rect key="frame" x="157" y="812" width="100" height="50"/>
-                                <color key="backgroundColor" red="0.55634254220000001" green="0.97934550050000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Pny-2G-ZRS"/>
-                                    <constraint firstAttribute="width" constant="100" id="wCa-hD-Ejm"/>
-                                </constraints>
-                                <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </pageControl>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="scrollableAxes" indicatorStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="oQ0-bp-lbG">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleAspectFill" semanticContentAttribute="spatial" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" hidesForSinglePage="YES" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="dhR-kz-B4V">
+                                <rect key="frame" x="103" y="812" width="200" height="50"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Pny-2G-ZRS"/>
+                                </constraints>
+                                <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </pageControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="etm-px-srf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="dhR-kz-B4V" firstAttribute="centerX" secondItem="oQ0-bp-lbG" secondAttribute="centerX" id="QcN-FW-CG2"/>
+                            <constraint firstItem="dhR-kz-B4V" firstAttribute="centerX" secondItem="oQ0-bp-lbG" secondAttribute="centerX" constant="-4" id="QcN-FW-CG2"/>
                             <constraint firstItem="oQ0-bp-lbG" firstAttribute="top" secondItem="etm-px-srf" secondAttribute="top" id="SAe-Us-C7u"/>
                             <constraint firstItem="oQ0-bp-lbG" firstAttribute="leading" secondItem="etm-px-srf" secondAttribute="leading" id="SLc-dg-Dqd"/>
                             <constraint firstItem="etm-px-srf" firstAttribute="bottom" secondItem="oQ0-bp-lbG" secondAttribute="bottom" id="b9b-uc-8UK"/>

@@ -17,6 +17,9 @@ class ScrollViewController: UIViewController , UIScrollViewDelegate {
         scrollView.isPagingEnabled = true
         scrollView.contentSize = CGSize(width: self.view.bounds.width*5, height: 818)
         createViews()
+        pageControl.backgroundColor = .clear
+        configurePageControl()
+
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -47,6 +50,14 @@ class ScrollViewController: UIViewController , UIScrollViewDelegate {
         scrollView.addSubview(view5)
         
     }
+    func configurePageControl() {
+        self.pageControl.numberOfPages = 5
+        pageControl.transform = CGAffineTransform(scaleX: 2, y: 2);
+        self.pageControl.tintColor = UIColor.blue
+        self.pageControl.pageIndicatorTintColor = UIColor.lightGray
+        self.pageControl.currentPageIndicatorTintColor = UIColor.black
+        self.view.addSubview(pageControl)
+    }
     
     func scheduledTimerWithTimeInterval(){
         // Scheduling timer to Call the function "updateCounting" with the interval of 3 seconds
@@ -66,6 +77,11 @@ class ScrollViewController: UIViewController , UIScrollViewDelegate {
             print("Scroll to start")
             scrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
         }
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        print(scrollView.contentOffset)
+        pageControl.currentPage = Int(scrollView.contentOffset.x / CGFloat(428))
     }
 
  
