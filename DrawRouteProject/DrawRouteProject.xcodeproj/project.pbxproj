@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		221DB7BC27993A2B000AF624 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221DB7BB27993A2B000AF624 /* AppDelegate.swift */; };
 		221DB7BE27993A2B000AF624 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221DB7BD27993A2B000AF624 /* SceneDelegate.swift */; };
-		221DB7C027993A2B000AF624 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221DB7BF27993A2B000AF624 /* ViewController.swift */; };
+		221DB7C027993A2B000AF624 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221DB7BF27993A2B000AF624 /* MapViewController.swift */; };
 		221DB7C327993A2B000AF624 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 221DB7C127993A2B000AF624 /* Main.storyboard */; };
 		221DB7C527993A2C000AF624 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 221DB7C427993A2C000AF624 /* Assets.xcassets */; };
 		221DB7C827993A2C000AF624 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 221DB7C627993A2C000AF624 /* LaunchScreen.storyboard */; };
@@ -37,7 +37,7 @@
 		221DB7B827993A2B000AF624 /* DrawRouteProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawRouteProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		221DB7BB27993A2B000AF624 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		221DB7BD27993A2B000AF624 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		221DB7BF27993A2B000AF624 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		221DB7BF27993A2B000AF624 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		221DB7C227993A2B000AF624 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		221DB7C427993A2C000AF624 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		221DB7C727993A2C000AF624 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -95,12 +95,12 @@
 			children = (
 				221DB7BB27993A2B000AF624 /* AppDelegate.swift */,
 				221DB7BD27993A2B000AF624 /* SceneDelegate.swift */,
-				221DB7BF27993A2B000AF624 /* ViewController.swift */,
+				221DB7BF27993A2B000AF624 /* MapViewController.swift */,
+				221DB7EB27993E58000AF624 /* Alert.swift */,
 				221DB7C127993A2B000AF624 /* Main.storyboard */,
 				221DB7C427993A2C000AF624 /* Assets.xcassets */,
 				221DB7C627993A2C000AF624 /* LaunchScreen.storyboard */,
 				221DB7C927993A2C000AF624 /* Info.plist */,
-				221DB7EB27993E58000AF624 /* Alert.swift */,
 			);
 			path = DrawRouteProject;
 			sourceTree = "<group>";
@@ -236,7 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				221DB7C027993A2B000AF624 /* ViewController.swift in Sources */,
+				221DB7C027993A2B000AF624 /* MapViewController.swift in Sources */,
 				221DB7BC27993A2B000AF624 /* AppDelegate.swift in Sources */,
 				221DB7EC27993E58000AF624 /* Alert.swift in Sources */,
 				221DB7BE27993A2B000AF624 /* SceneDelegate.swift in Sources */,

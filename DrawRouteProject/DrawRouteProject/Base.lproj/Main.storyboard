@@ -18,6 +18,9 @@
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="7CV-pS-Ujk">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="5I0-Ys-xZ6"/>
+                                </connections>
                             </mapView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i2v-iQ-HR8">
                                 <rect key="frame" x="0.0" y="813" width="414" height="49"/>
@@ -39,8 +42,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="backward.end.fill" catalog="system"/>
                                         <connections>
-                                            <action selector="previousRoute:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Clq-nd-N5v"/>
-                                            <action selector="showCurrentLocationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8vd-Bj-XbX"/>
+                                            <action selector="alternativeRoute:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MpD-P4-Np0"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6F-T7-pdY" userLabel="back">
@@ -48,8 +50,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="forward.end.fill" catalog="system"/>
                                         <connections>
-                                            <action selector="alternativeRoute1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4B1-L8-avm"/>
-                                            <action selector="showCurrentLocationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TVf-Zu-FAq"/>
+                                            <action selector="alternativeRoute1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5WH-kq-6QA"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPB-jU-qhm" userLabel="draw">
@@ -57,8 +58,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="hand.draw.fill" catalog="system"/>
                                         <connections>
-                                            <action selector="drawRouteButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cr4-Er-drO"/>
-                                            <action selector="showCurrentLocationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xuq-zK-BRI"/>
+                                            <action selector="drawRouteButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bh8-1K-AuK"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -80,7 +80,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="mapView" destination="7CV-pS-Ujk" id="y2q-f6-7Vx"/>
+                        <outlet property="mapView" destination="7CV-pS-Ujk" id="x6C-6r-akx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
