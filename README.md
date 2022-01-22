@@ -20,12 +20,10 @@
  <table>
   <tr>
     <td>MapView Project</td>
-    <td>MapView Project</td>
-    <td>WebView Project</td>
+    <td>ScrollView Project</td>
 
   </tr>
   </tr>
-   <td><img src="" width=200 height=480></td>
    <td><img src="" width=200 height=480></td>
    <td><img src="" width=200 height=480></td>
 
