@@ -1,27 +1,38 @@
 # HW5
 
-Odev 1: MapViewController’a bir toolbar eklenerek bu toolbar icerisinde sag ve sol oklar bulunacaktir. Kullanici bir rota olusturdugunda varsa alternatif rotalar da eszamanli kullaniciya gosterilecek, toolbara konulan ok tuslari ile rotalar arasi gecis saglanacaktir. 
+### This applications that I created ScrollView and MapView Projects ;
 
-Odev 2: olusturulacak bir viewController icerisinde gazete uygulamalarindan aliskin oldugumuz bir banner slider yapilacaktir. viewController icerisine bir scrollView, scrollView icerisine de 5 adet her biri farkli renkte view eklenecektir. 
-- bir viewdan bir sonraki view’a her 10 saniyede bir otomatik gecis yapilacaktir. 
-- scrollView’da infiniteScroll ozelligi olacaktir. ornek slide senaryosu: 1 > 2 > 3 > 4 > 5 > 1 > 2
+1. [Features](#Features)
+2. [Screen Shots](#ScreenShots)
+3. [Communication](#Communication)
 
-Not 1: Bu iki odev de mevcut uiComponents projemiz forklanarak uzerine yapilmalidir. Banner icin yeni viewController eklenerek icerisinde islem yapilacaktir. 
+## Features<a name="Features"></a>
+### Mapview Project
+- When the Mapview app is opened, it asks for location permission. it brings up a warning message on the screen if permission is denied or restricted permission is granted
+- This alert contains two options : cancel and go to settings
+- Marking a point on the map and clicking the draw route button draws the main route and alternative routes
+- You can switch between alternative routes with the arrow keys.
 
-Not 2: Derste soylemis oldugumuz heroTransitions ile listeleme ekranindan detay ekranina gecis animasyonu ekleme odevinden vazgectim. Arzu eden ve vakit bulan mevcut projede denemeler yapip gonderebilir. 
+### Scrollview Project
+- When the application is opened, it switches between color screens every 10 seconds
 
-# Old
-# HW3
+## Screen Shots <a name="ScreenShots"></a>
+ <table>
+  <tr>
+    <td>MapView Project</td>
+    <td>MapView Project</td>
+    <td>WebView Project</td>
 
-1- Date class’ına 4 adet extension yazılacak
-- .day parametresiyle gün bilgisini döndüren
-- .month parametresiyle ay bilgisini döndüren
-- .year parametresiyle yıl bilgisini döndüren
-- .dateAsPrettyString parametresiyle tarihi “28<>12<>2021” formatında string olarak döndüren
-extensionlar yazılması beklenmektedir.
+  </tr>
+  </tr>
+   <td><img src="" width=200 height=480></td>
+   <td><img src="" width=200 height=480></td>
+   <td><img src="" width=200 height=480></td>
 
-2- WeeklyDemos reposuna fork işlemi yapılarak Calculator projesi kopyalanacak; mevcut projeye 4 işlem (+, -, /, *) ve C, CE, = işlemleri eklenecektir.
+  </tr>
+ </table>
 
-Ödevin son tarihi önümüzdeki ders başlayana kadar.
-Ödevle ilgili anlaşılmayan yerleri gruptan sorarsak aynı soruların sorulmasını engellenmiş oluruz :)
-Bir sorun yaşadığınızda biz asistanlara yazmaya çekinmeyin :)
+
+## Communication <a name="Communication"></a>
+- [GitHub](https://github.com/SaniyeToy)
+- [Linkedln](https://www.linkedin.com/in/saniye-toy/)
